@@ -1,0 +1,32 @@
+﻿
+@model ForgingAhead.Models.Character
+
+<h1>Create Character</h1>
+
+<hr />
+
+@Html.BeginForm("Create", "Character") {
+
+<div class="form-horisontal">
+
+    <h4>Character</h4>
+    <hr />
+    <div class="form-group">
+
+        <div class="row">
+            @Html.LabelFor(e => e.Name)
+            @Html.TextBoxFor(e => e.Name)
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(e => e.IsActive)
+            @Html.CheckBoxFor(e => e.IsActive, new { @id = "IsActive"})
+
+        </div>
+
+    </div>
+
+</div>
+
+}
+

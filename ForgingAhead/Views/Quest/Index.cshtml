@@ -1,0 +1,22 @@
+﻿
+@model List<ForgingAhead.Models.Quest>
+
+<h1>
+    Quests
+</h1>
+<p>
+    @Html.ActionLink("Create new Quest", "Create")
+    @*<a asp-action="Create" asp-controller="Quest">Create new Quest</a>*@
+</p>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @Html.ActionLink(item.Name, "Details", new { name = item.Name})
+            @*<a asp-action="Details" asp-controller="Quest" asp-route-name="@item.Name">@item.Name</a>*@
+
+        </li>
+    }
+</ul>
+
+

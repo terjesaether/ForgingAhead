@@ -1,0 +1,24 @@
+﻿
+@model ForgingAhead.Models.Quest
+
+<h2>Create</h2>
+
+<hr />
+
+<div class="form-group">
+
+    @*asp-action="Create" asp-controller="Quest"*@
+
+    <div class="row">
+        @Html.LabelFor(e => e.Name)
+        @Html.TextBoxFor(e => e.Name)
+    </div>
+
+    <div class="row">
+        @Html.LabelFor(e => e.IsActive)
+        @Html.CheckBoxFor(e => e.IsActive, new { @id = "IsActive" })
+
+    </div>
+
+</div>
+

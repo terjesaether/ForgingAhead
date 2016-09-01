@@ -1,0 +1,20 @@
+﻿@model ForgingAhead.Models.Character
+
+<div class="md-col-5 bordered-div">
+    <h4>@Model.Name</h4>
+    <hr />
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.LabelFor( e => e.Level, new { @class = "col-md-8 control-label"} )
+
+            <div class="col-md-3">
+                <p>@Model.Level</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
